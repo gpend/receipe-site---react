@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .container, section, aside{
+    border: 1px solid black;
+} */
+
+.container-body{
+    display: flex;
+}
+
+.container-body section{
+    width: 85%;
+    margin: 2rem;
+}
+
+.container-body aside{
+    width: 15%;
+    margin-top: 3rem;
+}
+
+nav ul{
+    list-style: none;
+}
