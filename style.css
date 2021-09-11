@@ -16,7 +16,7 @@ header{
     display: flex;
 }
 
-.container-body section{
+.container-body #recipes{
     width: 85%;
     margin: 2rem;
 }
@@ -28,4 +28,16 @@ header{
 
 nav ul{
     list-style: none;
+}
+
+@media print{
+    .recipe-body ul {
+        list-style: none;
+    }
+
+    .recipe-body li::before{
+        content: '\2610';
+        margin: 0;
+        margin-right: 1em;
+    }
 }
