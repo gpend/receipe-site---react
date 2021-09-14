@@ -63,6 +63,13 @@ nav a:hover, nav a:focus{
     color: orange;
 }
 
+.recipe-card{
+    border: 1px solid black;
+    box-shadow: .5em .5em .5em lightgray;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
 @media print{
     .recipe-body ul {
         list-style: none;
