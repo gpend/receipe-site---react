@@ -1,5 +1,5 @@
 :root{
-    --orange: #FB8500;
+    --orange: #e27a03;
     --red: #710000;
     --purple: #A74482;
     --blue: #1B1B3A;
@@ -7,8 +7,11 @@
 
 body{
     margin: 0;
-    font-family: ubuntu, sans-serif;
+    font-family: 'ubuntu', sans-serif;
     font-size: 16px;
+}
+ h2{
+    margin-left: -1rem;
 }
 
 header{
@@ -18,6 +21,12 @@ header{
     color: var(--orange);
     background-image: url(images/mark-olsen-oZqJMbQMJ-4-unsplash.-cinnamon-rolls-cropped.jpg);
     padding: 4rem 0;
+}
+
+.header-text{
+    background-color: rgba(128, 128, 128, 0.616);
+    padding: .5em;
+    border-radius: 5px;
 }
 
 header h1{
