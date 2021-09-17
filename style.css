@@ -9,21 +9,34 @@ body{
     margin: 0;
     font-family: 'ubuntu', sans-serif;
     font-size: 16px;
+
 }
+
  h2{
     margin-left: -1rem;
 }
 
 header{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--orange);
-    background-image: url(images/mark-olsen-oZqJMbQMJ-4-unsplash.-cinnamon-rolls-cropped.jpg);
-    padding: 4rem 0;
+    /* color: var(--orange); */
+    color: white;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+header img{
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
     background-color: rgba(128, 128, 128, 0.616);
     padding: .5em;
     border-radius: 5px;
@@ -31,10 +44,6 @@ header{
 
 header h1{
     margin-bottom: 0;
-}
-
-header img{
-    height: 100px;
 }
 
 /* .container, section, aside{
@@ -52,7 +61,7 @@ header img{
 
 .container-body aside{
     width: 15%;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 nav ul{
