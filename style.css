@@ -16,6 +16,14 @@ body{
     margin-left: -1rem;
 }
 
+.container-body{
+    display: flex;
+}
+
+
+/* Header */
+
+
 header{
     position: relative;
     display: flex;
@@ -36,6 +44,7 @@ header img{
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -60%);
     background-color: rgba(128, 128, 128, 0.616);
     padding: .5em;
@@ -50,14 +59,9 @@ header h1{
     border: 1px solid black;
 } */
 
-.container-body{
-    display: flex;
-}
 
-.container-body #recipes{
-    width: 85%;
-    margin: 2rem;
-}
+/* Navigation */
+
 
 .container-body aside{
     width: 15%;
@@ -81,6 +85,15 @@ nav a:hover, nav a:focus{
     color: orange;
 }
 
+
+/* Recipes */
+
+
+.container-body #recipes{
+    width: 85%;
+    margin: 2rem;
+}
+
 .recipe-card{
     border: 1px solid black;
     box-shadow: .5em .5em .5em lightgray;
@@ -99,3 +112,11 @@ nav a:hover, nav a:focus{
         margin-right: 1em;
     }
 }
+
+/* right side */
+
+
+
+
+/* footer */
+
