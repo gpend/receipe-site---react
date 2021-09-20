@@ -28,3 +28,25 @@ function HideNone (){
         group.style.display = '';
     }
 }
+
+// Math.floor(measurement)
+
+// var gcd = function(a, b) {
+//     if (!b) return a;
+//       a = parseInt(a);
+//       b = parseInt(b);
+//     return gcd(b, a % b);
+//   };
+  
+//   var fraction = .75;
+//   var len = fraction.toString().length - 2;
+  
+//   var denominator = Math.pow(10, len);
+//   var numerator = fraction * denominator;
+  
+//   var divisor = gcd(numerator, denominator);    // Should be 8
+  
+//   numerator /= divisor;                         // Should be 439
+//   denominator /= divisor;                       // Should be 1250
+  
+//   alert(numerator.toFixed() + '/' + denominator.toFixed());

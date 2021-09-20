@@ -20,6 +20,15 @@ body{
     display: flex;
 }
 
+@media (max-width: 600px){
+    .container-body{
+        flex-direction: column;
+    }
+    .container-body aside ul{
+        flex-direction: row;
+        align-content: space-between; /*TODO figure this out*/
+    }
+}
 
 /* Header */
 
@@ -42,12 +51,12 @@ header img{
 
 .header-text{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -60%);
     background-color: rgba(128, 128, 128, 0.616);
-    padding: .5em;
+    padding: 1em 0;
     border-radius: 5px;
 }
 
@@ -64,11 +73,14 @@ header h1{
 
 
 .container-body aside{
+    flex-direction: column;
     width: 15%;
     /* margin-top: 3rem; */
 }
 
 nav ul{
+    display: flex;
+    flex-direction: column;
     list-style: none;
 }
 
@@ -88,7 +100,7 @@ nav li:hover, nav li:focus{
 
 .container-body #recipes{
     width: 85%;
-    margin: 2rem;
+    margin: 0 2rem;
 }
 
 .recipe-card{
