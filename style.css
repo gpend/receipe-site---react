@@ -1,5 +1,5 @@
 :root{
-    --orange: #e27a03;
+    --orange: #f08204;
     --red: #710000;
     --purple: #A74482;
     --blue: #1B1B3A;
@@ -34,20 +34,15 @@ header{
     color: white;
     margin-bottom: 4rem;
     text-align: center;
-}
-
-header img{
-    max-width: 100%;
-    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.308);
+    background-image: url(images/mark-olsen-oZqJMbQMJ-4-unsplash.-cinnamon-rolls-cropped.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
 }
 
 .header-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
     width: 100%;
-    transform: translate(-50%, -60%);
-    background-color: rgba(128, 128, 128, 0.616);
     padding: 1em 0;
     border-radius: 5px;
 }
@@ -124,9 +119,9 @@ nav li:hover, nav li:focus{
 
 
 
-@media (max-width: 600px){
+@media (max-width: 800px){
     header{
-        margin-bottom: 0;
+        margin-bottom: 2rem;
     }
 
     .header-text{
@@ -149,6 +144,6 @@ nav li:hover, nav li:focus{
     .container-body aside ul{
         width: 75%;
         flex-direction: row;
-        justify-content: space-between; /*TODO figure this out*/
+        justify-content: space-between;
     }
 }
