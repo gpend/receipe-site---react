@@ -45,15 +45,21 @@ header{
     width: 100%;
     padding: 1em 0;
     border-radius: 5px;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 header h1{
     margin-bottom: 0;
 }
 
-/* .container, section, aside{
-    border: 1px solid black;
-} */
+
+/* body */
+
+
+.container-body{
+    max-width: 75vw;
+    margin: 0 auto;
+}
 
 
 /* Navigation */

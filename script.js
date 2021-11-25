@@ -29,6 +29,26 @@ function HideNone (){
     }
 }
 
+// allow users to click a card to focus on it for printing
+let recipeCards = document.querySelectorAll(".recipe-card")
+for (let card of recipeCards){
+    card.addEventListener('click', event => {
+        for (let selection in event.path){
+            let element = event.path[selection];
+            if (element.classList){
+                if (element.classList.contains('recipe-card')){
+                    console.log(element.id)
+                    // let otherRecipes = document.querySelectorAll(`section.recipe-card:not(#${element.id})`);
+                    // for (let otherRecipe of otherRecipes){
+                    //     otherRecipe.style.display = 'none';
+                    //     console.log(otherRecipe.id)
+                    // }
+                }
+            }
+        }
+    })
+}
+
 // Math.floor(measurement)
 
 // var gcd = function(a, b) {
