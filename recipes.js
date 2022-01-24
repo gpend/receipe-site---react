@@ -1,4 +1,4 @@
-export default[
+let recipes = [
     {
         id: 1,
         title: "cinnamon rolls",
@@ -156,23 +156,28 @@ export default[
         id: 3,
         title: "Peanut butter balls",
         category: "desert",
-        ingredients:[
+        ingredientGroups:[
             {
-                ingredient: "corn flakes",
-                amount:"3.75 cups"
-            },
-            {
-                ingredient: "peanut butter",
-                amount:".75 cups"
-            },
-            {
-                ingredient: "brown sugar",
-                amount: ".75 cups"
-            },
-            {
-                ingredient: "dark corn syrup",
-                amount: ".375 cups"
-            }
+                title: "main",
+                ingredients:[
+                    {
+                        ingredient: "corn flakes",
+                        amount:"3.75 cups"
+                    },
+                    {
+                        ingredient: "peanut butter",
+                        amount:".75 cups"
+                    },
+                    {
+                        ingredient: "brown sugar",
+                        amount: ".75 cups"
+                    },
+                    {
+                        ingredient: "dark corn syrup",
+                        amount: ".375 cups"
+                    }
+                ],
+            }         
         ],
         directions:[
             "Heat the brown sugar and syrup to boiling. Remove from heat and stir in peanut butter.",
@@ -185,46 +190,51 @@ export default[
         id: 4,
         title: "Soft Lemon Cookies",
         category: "desert",
-        ingredients:[
-            {
-                ingredient: "butter",
-                amount: "70 grams"
-            },
-            {
-                ingredient: "white sugar",
-                amount: "100 grams"
-            },
-            {
-                ingredient: "zest of 2 lemons",
-                amount: "2 lemons"
-            },
-            {
-                ingredient: "egg",
-                amount: "1 medium"
-            },
-            {
-                ingredient:"lemon juice",
-                amount:"1.5 tbsp"
-            },
-            {
-                ingredient: "all purpose flour",
-                amount: "150 grams"
-            },
-            {
-                ingredient:"baking powder",
-                amount: "1 tsp"
-            },
-            {
-                ingredient: "salt",
-                amount: "1 tsp"
-            },
-            {
-                ingredient: "yellow food color",
-                amount:""
-            },
-            {
-                ingredient: "powdered sugar for the coating",
-                amount: "1 bag"
+        ingredientGroups:[
+            {   
+                title: "main",
+                ingredients:[
+                    {
+                        ingredient: "butter",
+                        amount: "70 grams"
+                    },
+                    {
+                        ingredient: "white sugar",
+                        amount: "100 grams"
+                    },
+                    {
+                        ingredient: "zest of 2 lemons",
+                        amount: "2 lemons"
+                    },
+                    {
+                        ingredient: "egg",
+                        amount: "1 medium"
+                    },
+                    {
+                        ingredient:"lemon juice",
+                        amount:"1.5 tbsp"
+                    },
+                    {
+                        ingredient: "all purpose flour",
+                        amount: "150 grams"
+                    },
+                    {
+                        ingredient:"baking powder",
+                        amount: "1 tsp"
+                    },
+                    {
+                        ingredient: "salt",
+                        amount: "1 tsp"
+                    },
+                    {
+                        ingredient: "yellow food color",
+                        amount:""
+                    },
+                    {
+                        ingredient: "powdered sugar for the coating",
+                        amount: "1 bag"
+                    }
+                ],
             }
         ],
         directions:[
@@ -242,36 +252,41 @@ export default[
     },
     {
         id: 5,
-        category: "bread",
         title: "basic roll dough",
-        ingredients:[
-            {
-                ingredient: "all purpose flour",
-                amount: "3.5 cups",
-            },
-            {
-                ingredient: "active dry yeast",
-                amount: "1 package"
-            },
-            {
-                ingredient: "milk",
-                amount: "1.25 cups"
-            },
-            {
-                ingredient: "sugar",
-                amount: ".25 cups"
-            },
-            {
-                ingredient: "shortening",
-                amount: ".25 cups"
-            },
-            {
-                ingredient: "salt",
-                amount: "1 tsp"
-            },
-            {
-                ingredient: "egg",
-                amount: 1
+        category: "bread",
+        ingredientGroups:[
+            {   
+                title: "main",
+                ingredients:[
+                    {
+                        ingredient: "all purpose flour",
+                        amount: "3.5 cups",
+                    },
+                    {
+                        ingredient: "active dry yeast",
+                        amount: "1 package"
+                    },
+                    {
+                        ingredient: "milk",
+                        amount: "1.25 cups"
+                    },
+                    {
+                        ingredient: "sugar",
+                        amount: ".25 cups"
+                    },
+                    {
+                        ingredient: "shortening",
+                        amount: ".25 cups"
+                    },
+                    {
+                        ingredient: "salt",
+                        amount: "1 tsp"
+                    },
+                    {
+                        ingredient: "egg",
+                        amount: 1
+                    }
+                ],
             }
         ],
         instructions: [
@@ -288,3 +303,5 @@ export default[
         ]
     }
 ]
+
+export default recipes
