@@ -1,14 +1,14 @@
 import './App.css';
-import header from './components/header'
-import nav from './components/nav';
+import Header from './components/header'
+import Nav from './components/nav';
 import Card from './components/card'
 import recipes from './recipes';
 
 function App() {
   return (
     <div className="App">
-      <header />
-      <nav />
+      <Header />
+      <Nav />
       {recipes.map(Card)}
     </div>
   );
