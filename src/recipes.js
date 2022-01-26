@@ -289,7 +289,7 @@ let recipes = [
                 ],
             }
         ],
-        instructions: [
+        directions: [
             "In mixing bowl combine 1½ cups of the flour and the yeast.",
             "Heat milk, sugar, shortening, and salt together just till warm (115-120°), stirring constantly till shortening almost melts.",
             "Add to dry mixture; add egg.",

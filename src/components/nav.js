@@ -1,6 +1,6 @@
 function nav(){
     return(
-        <aside class="left-nav">
+        <aside className="left-nav">
                     <nav>
                         <ul>
                             <li id="all">All</li>

@@ -5,11 +5,19 @@ import Card from './components/card'
 import recipes from './recipes';
 
 function App() {
+  const recipeItems = recipes.map( item => {
+    return (
+      <Card
+        key = {item.id}
+        item = {item}
+      />
+    )
+  })
   return (
     <div className="App">
       <Header />
       <Nav />
-      {recipes.map(Card)}
+      {recipeItems}
     </div>
   );
 }

@@ -1,29 +1,33 @@
-function card(recipe){
+function card(props){
      
-    
+    // console.log(props.item)
     let ingredientGroups = []
-    for (let group of recipe.ingredientGroups){
+    for (let group of props.item.ingredientGroups){
+        // console.log(group)
         let ingredientGroup = []
         if (!(group.title === "main")){
-            ingredientGroup += <h3>${group.title}</h3>
+            ingredientGroup.push( <h3>$group.title</h3>)
         }
         for (let ingredientThing of group.ingredients){
-            ingredientGroup += <li><span className='measure'>{ingredientThing.amount}</span> {ingredientThing.ingredient}</li>
+            ingredientGroup.push("<li><span className='measure'>"+ingredientThing.amount+"</span> "+ingredientThing.ingredient+"</li>")
         }
         ingredientGroups += ingredientGroup
     }
+    let instructions = []
+    for (let direction of props.item.directions){
+        instructions.push(direction + "<br>")
+    }
+
     return(   
-        <section class="recipe-card recipe-entree" id="crock-pot-spaghetti">
-            <h3 class="recipe-title">Crock-pot spaghetti</h3>
-                <div class="recipe-body">
+        <section className="recipe-card recipe-{props.item.category}">
+            <h3 className="recipe-title">{props.item.title}</h3>
+                <div className="recipe-body">
                     <ul>
                         {ingredientGroups}
                     </ul>
-                    {recipe.directions.map(direction =>{
-                            return(
-                                <p>{direction}</p>
-                            )
-                        })}
+                    <p>
+                        {instructions}
+                    </p>
                 </div>
         </section>
      )
