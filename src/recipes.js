@@ -84,7 +84,7 @@ let recipes = [
         category: "entree",
         ingredientGroups:[
             {
-                title: "Main",
+                title: "main",
                 ingredients:[
                     {
                         ingredient: "large green pepper, chopped",
