@@ -1,3 +1,11 @@
+function instructions(props){
+    
+}
+
+function directions(props){
+
+}
+
 function card(props){
      
     // console.log(props.item)
@@ -6,17 +14,25 @@ function card(props){
         // console.log(group)
         let ingredientGroup = []
         if (!(group.title === "main")){
-            ingredientGroup.push( <h3>$group.title</h3>)
+            ingredientGroup.push("<h3>"+group.title+"</h3>")
         }
-        for (let ingredientThing of group.ingredients){
+        for (let ingredientThing of group.ingredients){ //change this to map; create function for ingredients and another for directions
             ingredientGroup.push("<li><span className='measure'>"+ingredientThing.amount+"</span> "+ingredientThing.ingredient+"</li>")
         }
         ingredientGroups += ingredientGroup
     }
-    let instructions = []
-    for (let direction of props.item.directions){
-        instructions.push(direction + "<br>")
-    }
+    // let instructions = []
+    // for (let direction of props.item.directions){
+    //     instructions.push(direction + "<br>")
+    // }
+    let instructions = props.item.directions.map(direction =>{
+        return(
+            <p>
+                {direction}
+            </p>
+        )
+    })
+
 
     return(   
         <section className="recipe-card recipe-{props.item.category}">
@@ -25,9 +41,9 @@ function card(props){
                     <ul>
                         {ingredientGroups}
                     </ul>
-                    <p>
+                    <div className="directions">
                         {instructions}
-                    </p>
+                    </div>
                 </div>
         </section>
      )
