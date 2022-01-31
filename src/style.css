@@ -48,6 +48,10 @@ header{
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+.header-text .hidden{
+    display: none;
+}
+
 header h1{
     margin-bottom: 0;
 }
@@ -64,8 +68,8 @@ header h1{
 
 /* Navigation */
 
-
-.container-body aside{
+/*TODO figure this out */
+.container-body aside{ 
     flex-direction: column;
     width: 15%;
     /* margin-top: 3rem; */
@@ -91,7 +95,7 @@ nav li:hover, nav li:focus{
 /* Recipes */
 
 
-.container-body #recipes{
+.container-recipes{
     width: 85%;
     margin: 0 2rem;
 }
@@ -101,6 +105,11 @@ nav li:hover, nav li:focus{
     box-shadow: .5em .5em .5em lightgray;
     padding: 1em;
     margin-bottom: 1em;
+}
+
+div.directions p{
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 @media print{

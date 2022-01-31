@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Header from './components/header'
 import Nav from './components/nav';
 import Card from './components/card'
@@ -16,10 +16,18 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Nav />
-      {recipeItems}
+      <div className='container container-body'>
+        <Nav />
+        <div className='container container-recipes'>
+          {recipeItems}
+        </div>
+      </div>
     </div>
   );
 }
 
 export default App;
+
+// TODO fix nav buttons
+// TODO update heading sizes
+// TODO add margins to cards 

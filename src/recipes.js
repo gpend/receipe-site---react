@@ -57,7 +57,7 @@ let recipes = [
                         amount: ".25 cup"
                     },
                     {
-                        ingredient: "stick softened butter",
+                        ingredient: "softened butter",
                         amount: ".25 stick"
                     }
                 ]
@@ -76,6 +76,58 @@ let recipes = [
             "Bake on greased baking sheet in hot oven (400◦F) for 12 to 15 minutes.", 
             "Frosting may be added after cooling somewhat - 2 cups confectioner sugar stirred into 2 tablespoons milk, OJ to get desired pouring consistency. Almond or vanilla may be added to taste... Flour quantity may vary according to temp and humidity.", 
             "Warm = 110-115◦F. Oven = 400◦F"
+        ]
+    },
+    {
+        id: 5,
+        title: "basic roll dough",
+        category: "bread",
+        ingredientGroups:[
+            {   
+                title: "main",
+                ingredients:[
+                    {
+                        ingredient: "all purpose flour",
+                        amount: "3.5 cups",
+                    },
+                    {
+                        ingredient: "active dry yeast",
+                        amount: "1 package"
+                    },
+                    {
+                        ingredient: "milk",
+                        amount: "1.25 cups"
+                    },
+                    {
+                        ingredient: "sugar",
+                        amount: ".25 cups"
+                    },
+                    {
+                        ingredient: "shortening",
+                        amount: ".25 cups"
+                    },
+                    {
+                        ingredient: "salt",
+                        amount: "1 tsp"
+                    },
+                    {
+                        ingredient: "egg",
+                        amount: 1
+                    }
+                ],
+            }
+        ],
+        directions: [
+            "In mixing bowl combine 1½ cups of the flour and the yeast.",
+            "Heat milk, sugar, shortening, and salt together just till warm (115-120°), stirring constantly till shortening almost melts.",
+            "Add to dry mixture; add egg.",
+            "Beat at low speed of electric mixer for ½ minute, scraping bowl.",
+            "Beat 3 minutes at high speed.  By hand, stir in remaining flour to make a soft dough. Shape into ball.",
+            "Place in lightly greased bowl; turn once to grease surface.  Cover; let rise in warm place till double, 1½ to 2 hours.",
+            "Punch down; turn out on floured surface.  Cover; let rest 10 minutes.",
+            "Shape into desired rolls.  Place on greased baking sheets or in greased muffin pans. Cover; let rise in warm place till double, 30 to 45 minutes.",
+            "Bake in hot oven (400°F) for 10 to 12 minutes.",
+            "Remember,  humidity, air pressure, and temperature make a difference in bread making and the recipe may need to be adjusted a wee bit.  Once you learn how the dough feels, that will be automatic."
         ]
     },
     {
@@ -249,58 +301,6 @@ let recipes = [
             "Preheat the oven at 180 C and bake them for exactly 13 minutes. Let them cool completely and coat them with powdered sugar."
         ],
         attribution: "Recipe from <a href=\"https://www.reddit.com/r/food/comments/owg64q/homemade_soft_lemon_cookies/\">r/food on reddit</a>"
-    },
-    {
-        id: 5,
-        title: "basic roll dough",
-        category: "bread",
-        ingredientGroups:[
-            {   
-                title: "main",
-                ingredients:[
-                    {
-                        ingredient: "all purpose flour",
-                        amount: "3.5 cups",
-                    },
-                    {
-                        ingredient: "active dry yeast",
-                        amount: "1 package"
-                    },
-                    {
-                        ingredient: "milk",
-                        amount: "1.25 cups"
-                    },
-                    {
-                        ingredient: "sugar",
-                        amount: ".25 cups"
-                    },
-                    {
-                        ingredient: "shortening",
-                        amount: ".25 cups"
-                    },
-                    {
-                        ingredient: "salt",
-                        amount: "1 tsp"
-                    },
-                    {
-                        ingredient: "egg",
-                        amount: 1
-                    }
-                ],
-            }
-        ],
-        directions: [
-            "In mixing bowl combine 1½ cups of the flour and the yeast.",
-            "Heat milk, sugar, shortening, and salt together just till warm (115-120°), stirring constantly till shortening almost melts.",
-            "Add to dry mixture; add egg.",
-            "Beat at low speed of electric mixer for ½ minute, scraping bowl.",
-            "Beat 3 minutes at high speed.  By hand, stir in remaining flour to make a soft dough. Shape into ball.",
-            "Place in lightly greased bowl; turn once to grease surface.  Cover; let rise in warm place till double, 1½ to 2 hours.",
-            "Punch down; turn out on floured surface.  Cover; let rest 10 minutes.",
-            "Shape into desired rolls.  Place on greased baking sheets or in greased muffin pans. Cover; let rise in warm place till double, 30 to 45 minutes.",
-            "Bake in hot oven (400°F) for 10 to 12 minutes.",
-            "Remember,  humidity, air pressure, and temperature make a difference in bread making and the recipe may need to be adjusted a wee bit.  Once you learn how the dough feels, that will be automatic."
-        ]
     }
 ]
 
