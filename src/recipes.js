@@ -1,7 +1,7 @@
 let recipes = [
     {
         id: 1,
-        title: "cinnamon rolls",
+        title: "Cinnamon rolls",
         category: "bread",
         ingredientGroups:[
             {
@@ -80,7 +80,7 @@ let recipes = [
     },
     {
         id: 5,
-        title: "basic roll dough",
+        title: "Basic roll dough",
         category: "bread",
         ingredientGroups:[
             {   

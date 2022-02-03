@@ -15,9 +15,11 @@ body{
  h2{
     margin-left: -1rem;
 }
+
 p{
     line-height: 1.6;
 }
+
 .container-body{
     display: flex;
 }
@@ -83,12 +85,27 @@ nav ul{
 
 nav li{
     margin-bottom: 1rem;
-    color: gray;
+    /* color: gray; */
 }
 
-nav li:hover, nav li:focus{
+nav li button{
+    background-color: unset;
+    border: none;
+    color: gray;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1em;
+}
+
+/* nav li:hover, nav li:focus{
     color: orange;
     cursor: pointer;
+} */
+
+nav li button:hover, nav li button:focus, nav li button:focus-visible{
+    color: orange;
+    cursor: pointer;
+    border: none;
+    outline: 2px solid orange;
 }
 
 
@@ -103,7 +120,7 @@ nav li:hover, nav li:focus{
 .recipe-card{
     border: 1px solid black;
     box-shadow: .5em .5em .5em lightgray;
-    padding: 1em;
+    padding: 2em;
     margin-bottom: 1em;
 }
 

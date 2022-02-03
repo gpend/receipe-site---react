@@ -33,7 +33,7 @@ function card(props){
 
     return(   
         <section className={`recipe-card recipe-group-${props.item.category}`}>
-            <h3 className="recipe-title">{props.item.title}</h3>
+            <h2 className="recipe-title">{props.item.title}</h2>
                 <div className="recipe-body">
                     {ingredientBlock}
                     <div className="directions">

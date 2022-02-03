@@ -1,18 +1,20 @@
+import React from "react";
 // import './App.css';
-import Header from './components/header'
+import Header from './components/header';
 import Nav from './components/nav';
 import Card from './components/card'
 import recipes from './recipes';
 
 function App() {
-  const recipeItems = recipes.map( item => {
+  const [recipeItems, setRecipeItems] = React.useState(recipes.map( item => {
     return (
       <Card
         key = {item.id}
         item = {item}
       />
     )
-  })
+  }))  
+
   return (
     <div className="App">
       <Header />
