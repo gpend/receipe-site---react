@@ -70,7 +70,6 @@ header h1{
 
 /* Navigation */
 
-/*TODO figure this out */
 .container-body aside{ 
     flex-direction: column;
     width: 15%;
@@ -105,10 +104,11 @@ nav li button:hover, nav li button:focus, nav li button:focus-visible{
     color: orange;
     cursor: pointer;
     border: none;
-    outline: 2px solid orange;
 }
 
-
+nav li button:focus-visible{
+    outline: 2px solid orange;
+}
 /* Recipes */
 
 

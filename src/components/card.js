@@ -30,9 +30,9 @@ function card(props){
             </p>
         )
     })
-
+//
     return(   
-        <section className={`recipe-card recipe-group-${props.item.category}`}>
+        <section className={`recipe-card recipe-group-${props.item.category}`} onClick= {()=>props.CardSelected(props.item.id)}> 
             <h2 className="recipe-title">{props.item.title}</h2>
                 <div className="recipe-body">
                     {ingredientBlock}
