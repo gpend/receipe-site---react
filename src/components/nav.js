@@ -4,6 +4,13 @@ function nav(props){
     return(
         <aside className="left-nav">
                     <nav>
+                        <label data-domain="🔍">
+                        <input id="search--input" onKeyUp={(event) => {
+                                if (event.key === "Enter"){
+                                    props.Search(event)
+                                }
+                            }} />
+                        </label>
                         <ul>
                             <li id="all"><button onClick={props.allClick}>All</button></li>
                             <li id="entrees"><button onClick={props.entreesClick}>Entrees</button></li>
@@ -17,3 +24,5 @@ function nav(props){
 }
 
 export default nav
+
+// <input id="search--input" onKeyUp={(event) => Search(event)} />

@@ -95,10 +95,28 @@ nav li button{
     font-size: 1em;
 }
 
-/* nav li:hover, nav li:focus{
-    color: orange;
-    cursor: pointer;
-} */
+nav input{
+    text-indent: 17px;
+}
+
+nav label, nav input {
+    position: relative;
+    display: block;
+    padding-right: 76px;
+    width: 150px;
+    box-sizing: border-box;
+    margin-left: 1.5em;
+}
+
+nav label::after {
+    content: '.' attr(data-domain);
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    font-size: 12px;
+    display: block;
+    color: rgba(0, 0, 0, 0.6);
+}
 
 nav li button:hover, nav li button:focus, nav li button:focus-visible{
     color: orange;

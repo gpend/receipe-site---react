@@ -37,13 +37,27 @@ function App() {
     setFilteredRecipes(recipesFiltered)
   }
 
-//TODO add search
+  function Search(event){
+    // let term = event.target.value
+    // let recipesWTerm = []
+    // console.log(typeof(recipes))
+    // for (let recipe of recipes){
+    //   console.log(toString(recipe))
+    //   // if (recipe.includes(term)){
+    //   //   recipesWTerm.push(recipe)
+    //   // }
+    // }
+    // setFilteredRecipes(recipesWTerm)
+  }
+
+//TODO add search - maybe in nav?
 
   return (
     <div className="App">
       <Header />
       <div className='container container-body'>
         <Nav
+          Search = {Search}
           allClick = {ShowAll}
           entreesClick={ShowEntrees}
           breadsClick ={ShowBreads}
