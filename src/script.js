@@ -1,4 +1,4 @@
-const groups = document.querySelectorAll(".recipe-group")
+const cards = document.querySelectorAll(".recipe-card")
 const all_btn = document.querySelector('#all')
 const entree_btn = document.querySelector('#entrees')
 const sides_btn = document.querySelector('#sides')
@@ -11,21 +11,21 @@ breads_btn.addEventListener('click', function(){ HideOthers('recipe-group-bread'
 deserts_btn.addEventListener('click', function(){ HideOthers('recipe-group-desert'); })
 all_btn.addEventListener('click', function() { HideNone(); })
 
-function HideOthers(recipeGroupId){
-    for (let group of groups){
+function HideOthers(recipeGroupclass){
+    for (let card of cards){
         // console.log(group.id)
-        if (!(group.id === recipeGroupId)){
-            group.style.display = 'none';
+        if (!(card.classList).contains(recipeGroupclass)){
+            card.style.display = 'none';
         }
         else {
-            group.style.display = '';
+            card.style.display = '';
         }
     }
 }
-
+// (cards[0].classList).contains('recipe-group-bread')
 function HideNone (){
-    for (let group of groups){
-        group.style.display = '';
+    for (let card of cards){
+        card.style.display = '';
     }
 }
 

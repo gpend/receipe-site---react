@@ -15,9 +15,11 @@ body{
  h2{
     margin-left: -1rem;
 }
+
 p{
     line-height: 1.6;
 }
+
 .container-body{
     display: flex;
 }
@@ -48,6 +50,10 @@ header{
     text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+.header-text .hidden{
+    display: none;
+}
+
 header h1{
     margin-bottom: 0;
 }
@@ -64,8 +70,7 @@ header h1{
 
 /* Navigation */
 
-
-.container-body aside{
+.container-body aside{ 
     flex-direction: column;
     width: 15%;
     /* margin-top: 3rem; */
@@ -79,19 +84,53 @@ nav ul{
 
 nav li{
     margin-bottom: 1rem;
-    color: gray;
+    /* color: gray; */
 }
 
-nav li:hover, nav li:focus{
+nav li button{
+    background-color: unset;
+    border: none;
+    color: gray;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1em;
+}
+
+nav input{
+    text-indent: 17px;
+}
+
+nav label, nav input {
+    position: relative;
+    display: block;
+    padding-right: 76px;
+    width: 150px;
+    box-sizing: border-box;
+    margin-left: 1.5em;
+}
+
+nav label::after {
+    content: '.' attr(data-domain);
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    font-size: 12px;
+    display: block;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+nav li button:hover, nav li button:focus, nav li button:focus-visible{
     color: orange;
     cursor: pointer;
+    border: none;
 }
 
-
+nav li button:focus-visible{
+    outline: 2px solid orange;
+}
 /* Recipes */
 
 
-.container-body #recipes{
+.container-recipes{
     width: 85%;
     margin: 0 2rem;
 }
@@ -99,8 +138,13 @@ nav li:hover, nav li:focus{
 .recipe-card{
     border: 1px solid black;
     box-shadow: .5em .5em .5em lightgray;
-    padding: 1em;
+    padding: 2em;
     margin-bottom: 1em;
+}
+
+div.directions p{
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 @media print{
